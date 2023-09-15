@@ -12,7 +12,7 @@ export function MapBg() {
         y="0px"
         viewBox="0 0 2560 1600"
         // xmlSpace="preserve"
-        preserveAspectRatio="xMinYMin meet"
+        preserveAspectRatio="xMinYMin slice"
         style={{
           top: 0,
           zIndex: -1,
