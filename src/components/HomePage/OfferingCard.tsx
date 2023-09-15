@@ -87,14 +87,16 @@ export function OfferingCard(props: {
           />
           <Button
             size="small"
+            disabled={usdAmount === "NaN" || parseFloat(usdAmount) <= 0}
             variant="contained"
             sx={{ minWidth: "fit-content", textTransform: "none" }}
             onClick={() => {
-              onAdd(offering, usdAmount)
-              setValue("")
+              onAdd(offering, usdAmount);
+              setValue("");
             }}
           >
-            Add {value ? formatNumber(parseFloat(usdAmount)) : ""} {value ? currency : ""} to total
+            Add {value ? formatNumber(parseFloat(usdAmount)) : ""}{" "}
+            {value ? currency : ""} to total
           </Button>
         </Stack>
       </CardActions>

@@ -55,7 +55,7 @@ export default function HomePage() {
                 {x.offering.product_type} {x.offering.usage_type}
               </Typography>
               <Typography variant="caption" color="text.secondary">
-                {formatNumber(x.usdAmount)} {x.offering.currency}
+                {formatNumber(parseFloat(x.usdAmount))} {x.offering.currency}
               </Typography>
             </Stack>
           ))}
