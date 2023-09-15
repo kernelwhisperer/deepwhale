@@ -16,15 +16,18 @@
     "@mui/icons-material": "latest",
     "@mui/material": "latest",
     "next": "latest",
+    "lodash": "^4.17.21",
     "react": "latest",
     "react-dom": "latest"
   },
   "devDependencies": {
+    "@types/lodash": "^4.14.198",
     "@types/node": "latest",
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "eslint": "latest",
     "eslint-config-next": "latest",
+    "prettier": "^3.0.3",
     "typescript": "latest"
   }
 }
